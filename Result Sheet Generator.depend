@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1717004401 source:c:\users\behan\desktop\d_bse_24_0022\result sheet generator\main.cpp
+	<iostream>
+	<conio.h>
+	<limits>
+
