@@ -1,1 +1,1 @@
-"# Simple-Result-Sheet-Generator" 
+# Simple-Result-Sheet-Generator
