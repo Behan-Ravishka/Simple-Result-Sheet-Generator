@@ -1,10 +1,11 @@
 #include <iostream>
 #include <conio.h>
+#include <stdlib.h>
 #include <limits> // Include <limits> for input validation
 using namespace std;
 //functions
 void main_menu();
-void add_new_marks(int n);
+void add_new_marks();
 void print_marks_sheet();
 void print_grade_sheet();
 void print_data_summary();
@@ -30,7 +31,7 @@ int main()
         {
         case 1 :
             cout << "\n[1] Add new Student Marks" << endl;
-            add_new_marks(n);
+            add_new_marks();
             break;
         case 2 :
             cout << "\n[2] Print Marks Sheet" << endl;
@@ -46,7 +47,9 @@ int main()
             break;
         case 5 :
             cout << "\n[5] Exit" << endl;
+            system("cls");
             cout << "\n\tEnd of the Operation! See you Later!" << endl;
+
             break;
         default :
             cout << "\n\tInvalid Input! Please choose a number from the menu (1-5)" << endl;
@@ -58,7 +61,6 @@ int main()
 void main_menu()
 {
     //display menu
-    int n;
     cout << "\n" << endl;
     cout << "--------------------------" << endl;
     cout << "  Result Sheet Generator " << endl;
@@ -71,8 +73,9 @@ void main_menu()
     cout << "--------------------------" << endl;
     cout << "\n\nChoose a number from the Menu : ";
 }
-void add_new_marks(int n)
+void add_new_marks()
 {
+    system("cls");
     //validate entered marks
     cout << "\nEnter Marks (0-100) of the 10 Students" << endl;
     for (int i=0 ; i<10 ; i++)
@@ -88,6 +91,7 @@ void add_new_marks(int n)
 }
 void print_marks_sheet()
 {
+    system("cls");
     //display marks sheet
     cout << "\n" << endl;
     cout << "-------------" << endl;
@@ -100,6 +104,7 @@ void print_marks_sheet()
 }
 void print_grade_sheet()
 {
+    system("cls");
     //earned grade
     string grade;
     cout << "\n" << endl;
@@ -134,6 +139,7 @@ void print_grade_sheet()
 }
 void print_data_summary()
 {
+    system("cls");
     //display class summary with Average,min and max
     float sum=0;
     int i;
